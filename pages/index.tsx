@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import { Image, Text, Flex, Box, Button, Heading, UnorderedList, ListItem} from "@chakra-ui/react"
-import { SiNextDotJs, SiYelp, SiReact} from 'react-icons/si';
 import { textMediaQuery } from '../utils/utils';
 
 const Home: NextPage = () => {
@@ -41,13 +40,10 @@ const Home: NextPage = () => {
                 <Text color="grey.700">Yelp Roulette(WIP) is an app that randomly selects a restaraunt depending on category selected and displays a link to the yelp page.</Text>
                 <UnorderedList mt="20px" display="flex" justifyContent="space-around" alignItems="center" maxW="200px">
                   <ListItem>
-                    <SiReact />
                   </ListItem>
                   <ListItem>
-                    <SiNextDotJs />
                   </ListItem>
                   <ListItem>
-                    <SiYelp />
                   </ListItem>
                 </UnorderedList>
               </Box>
