@@ -6,7 +6,7 @@ export const Navbar = () => {
 	const [isHovered, setIsHovered] = useState(false);
 
 	return (
-		<Box as="nav" maxW="80vw" m="auto" display="flex" alignItems="center" justifyContent="space-between" py="20px">
+		<Box as="nav" maxW="80vw" m="auto" display="flex" alignItems="center" justifyContent="space-between" py="20px" role="navigation">
 			<Link href="/" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
 				<Image src="/head.png" 
 					objectFit="contain" 
@@ -17,12 +17,12 @@ export const Navbar = () => {
 					transform={isHovered ? "translateY(-10px) rotate(-10deg)" : ""}
 					transition="transform .3s ease"/>
 			</Link>
-			<UnorderedList role="menubar" display="flex" p="20px" listStyleType="none" w="100%" maxW="300px" justifyContent="space-around">
+			<UnorderedList  display="flex" p="20px" listStyleType="none" w="100%" maxW="300px" justifyContent="space-around">
 				<ListItem>
-					<Link href="/about" fontSize={textMediaQuery("md", "2xl")} fontWeight="bold">About</Link>
+					<Link href="/about" fontSize={textMediaQuery("md", "2xl")} fontWeight="bold" _hover={ { color: "purple.400" } }>About</Link>
 				</ListItem>
 				<ListItem>
-					<Link href="/blog" fontSize={textMediaQuery("md", "2xl")} fontWeight="bold">Blog</Link>
+					<Link href="/blog" fontSize={textMediaQuery("md", "2xl")} fontWeight="bold" _hover={ { color: "purple.400" } }>Blog</Link>
 				</ListItem>
 			</UnorderedList>
 		</Box>
