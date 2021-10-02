@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         >
           <Box w={{ base: "100%", lg: "50%" }} as="header" p="20px">
             <Heading
-              bgGradient="linear(to-tl, purple.400, purple.700)"
+              bgGradient="linear(to-tl, purple.300, purple.600)"
               bgClip="text"
               fontSize={textMediaQuery("3xl", "5xl")}
               fontWeight="bold"
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
               thoughts, work, and memes.
             </Text>
             <Heading
-              bgGradient="linear(to-tl, purple.400, purple.600)"
+              bgGradient="linear(to-tl, purple.300, purple.600)"
               bgClip="text"
               as="h2"
               fontSize={textMediaQuery("xl", "3xl")}

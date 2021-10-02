@@ -27,7 +27,7 @@ export const Navbar = () => {
 					/>
 				</Link>
 			</NextLink>
-			<UnorderedList
+			{/*<UnorderedList
 				display="flex"
 				p="20px"
 				listStyleType="none"
@@ -41,7 +41,7 @@ export const Navbar = () => {
 				<ListItem>
 					<StyledLink url="/blog">Blog</StyledLink>
 				</ListItem>
-			</UnorderedList>
+			</UnorderedList> */}
 		</Box>
 	);
 };
