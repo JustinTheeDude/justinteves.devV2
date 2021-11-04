@@ -23,7 +23,7 @@ export const Layout: NextPage<ContainerProps> = ({
 				/>
 			</Head>
 			<BackgroundSVG />
-			<Box maxW="80vw" margin="auto">
+			<Box maxW={{ "base": "95vw", "xl": "80vw" }}margin="auto">
 				<Navbar />
 				<main>{children}</main>
 				<Footer />

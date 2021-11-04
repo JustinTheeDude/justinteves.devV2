@@ -110,7 +110,7 @@ const Home: NextPage = () => {
             </UnorderedList>
           </Box>
           <Image
-            src="/justin_artwork.png"
+            src="/justin_artwork.webp"
             objectFit="contain"
             boxSize={{ base: "100%", lg: "50%" }}
             loading="eager"
